@@ -82,7 +82,7 @@ footer .brand img:nth-child(2) {
 
 #hero {
     background: url(../img/home1.png), linear-gradient(#0d0101, #580909, #a61111);
-    height: 700px;
+    height: 800px;
     background-repeat: no-repeat;
     background-position: 95%;
     background-position-y: 10%;
@@ -163,14 +163,35 @@ footer {
 
 footer .media {
     padding: 15px;
-    margin-bottom: 10px;
+    word-spacing: .7rem;
 }
 
-footer .media img {
-    background-color: var(--primary-ad-color);
-    color: var(--white-ad-color);
-    padding: 5px;
+.fa-facebook-f {
+    padding: 7px 15px;
     border-radius: 50%;
+    color: var(--black-ad-color);
+    background-color: var(--primary-ad-color);
+}
+
+.fa-instagram {
+    padding: 7px 10px;
+    border-radius: 50%;
+    color: var(--black-ad-color);
+    background-color: var(--primary-ad-color);
+}
+
+.fa-youtube {
+    padding: 8px 5px;
+    border-radius: 50%;
+    color: var(--black-ad-color);
+    background-color: var(--primary-ad-color);
+}
+
+.fa-twitter {
+    padding: 8px 7px;
+    border-radius: 50%;
+    color: var(--black-ad-color);
+    background-color: var(--primary-ad-color);
 }
 
 footer .copyright {

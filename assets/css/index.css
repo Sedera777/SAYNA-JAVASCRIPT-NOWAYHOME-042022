@@ -16,6 +16,36 @@
     height: 760px;
 }
 
+.fa-heart {
+    cursor: pointer;
+}
+
+.audio-container {
+    width: 470px;
+}
+
+#cover {
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.progress {
+    max-width: 470px;
+    height: 5px;
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.progress-container {
+    background-color: #ffffff;
+}
+
+#prev,
+#play,
+#next {
+    cursor: pointer;
+}
+
 #lesspiderman {
     background-color: #a61111;
 }
@@ -49,12 +79,6 @@
     text-align: justify;
 }
 
-
-/* .card-unique{
-    width: 30%;
-    margin-right: auto;
-} */
-
 .card-unique ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -71,6 +95,7 @@
     background-size: auto;
     background-repeat: no-repeat;
     padding: 20px 0;
+    position: relative;
 }
 
 h1 {
@@ -91,6 +116,40 @@ h1 {
     padding: 5px 10px;
     background-color: #ffffff;
     border-color: none;
+}
+
+#popUpBox {
+    top: 25%;
+    left: 48%;
+    width: 700px;
+    max-width: 900px;
+    position: absolute;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    opacity: .7;
+    display: none;
+    z-index: 7;
+    line-height: .5em;
+    box-shadow: 0 0 30px 0 black;
+    transform: translate(-50% -50%);
+    background-color: var(--blue-color);
+}
+
+#save {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.close {
+    border: 2px solid;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+#danger {
+    color: #b11313;
 }
 
 .become-spiderman::placeholder {
