@@ -129,6 +129,7 @@ footer .brand img:nth-child(2) {
 #card-section .card-hero .card-image {
     background-color: var(--white-ad-color);
     height: 180px;
+    width: 400px;
     margin-bottom: 15px;
     background-size: cover;
     background-position: center;
@@ -148,6 +149,20 @@ footer .brand img:nth-child(2) {
     border-bottom-color: transparent;
     border-top-color: #ffffff;
     border-right-color: #ffffff;
+}
+
+.class-title1,
+.class-title2,
+.class-title3,
+.class-title4,
+.class-title5,
+.class-title6,
+.class-title7,
+.class-title8,
+.class-title9,
+.class-title10,
+.class-title11 {
+    position: relative;
 }
 
 
@@ -174,9 +189,36 @@ footer .brand img:nth-child(2) {
     background-image: url(../img/img10.png);
 }
 
-.transition {
-    transform: scale(0.99);
-    transition: all .5s ease-in-out;
+#card-section .card-hero .card-image-4 {
+    background-image: url(../img/img11.png);
+}
+
+#card-section .card-hero .card-image-5 {
+    background-image: url(../img/img12.png);
+}
+
+#card-section .card-hero .card-image-6 {
+    background-image: url(../img/img13.png);
+}
+
+#card-section .card-hero .card-image-7 {
+    background-image: url(../img/img14.png);
+}
+
+#card-section .card-hero .card-image-8 {
+    background-image: url(../img/img15.png);
+}
+
+#card-section .card-hero .card-image-9 {
+    background-image: url(../img/img16.png);
+}
+
+#card-section .card-hero .card-image-10 {
+    background-image: url(../img/img17.png);
+}
+
+#card-section .card-hero .card-image-11 {
+    background-image: url(../img/img18.png);
 }
 
 
@@ -186,6 +228,7 @@ footer .brand img:nth-child(2) {
     font-weight: bold;
     padding: 15px;
     margin-top: -20px;
+    position: relative;
     background: rgba(0, 0, 0, 0.7);
     border-left: 6px solid var(--black-ad-color);
     border-right: 6px solid var(--black-ad-color);

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/adversaires.css">
     <link rel="stylesheet" href="./assets/css/bonus.css">
+    <script src="./scripts/jquery-3.6.0.js"></script>
     <title>Spiderman - Bonus</title>
 </head>
+
 <body>
     <header id="header-top">
         <nav>
@@ -32,7 +36,7 @@
         </nav>
     </header>
     <main>
-        <section id="hero" >
+        <section id="hero">
             <div class="conteneur">
                 <div class="brand-mobile">
                     <a href="index.html">
@@ -43,11 +47,12 @@
                     <div><i class="fa-solid fa-ellipsis fa-2x"></i></div>
                 </div>
             </div>
-            
+            <button type="button" class="btn button1" id='timer'></button>
             <div class="conteneur box">
                 <h1 class="titre">UN HEROS</h1>
                 <p class="description">"Coming Soon..."</p>
             </div>
+
         </section>
     </main>
 
@@ -79,15 +84,19 @@
                 </ul>
             </div>
             <div class="media">
-                <img src="./assets/logo/logof.png" alt="">
-                <img src="./assets/logo/logoi.png" alt="">
-                <img src="./assets/logo/logot.png" alt="">
-                <img src="./assets/logo/logoy.png" alt="">
+                <i class="fa-brands fa-facebook-f fa-3x mediahover"></i>
+                <i class="fa-brands fa-instagram fa-3x mediahover"></i>
+                <i class="fa-brands fa-youtube fa-3x mediahover"></i>
+                <i class="fa-brands fa-twitter fa-3x mediahover"></i>
             </div>
             <div class="copyright">
                 <p>&copy;SaynaXMarvel, Inc 2022. We love our users</p>
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./scripts/bonus.js"></script>
 </body>
+
 </html>

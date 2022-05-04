@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-ad-color: #b11313;
     --black-ad-color: #000000;
     --white-ad-color: #ffffff;
@@ -7,8 +7,7 @@
 
 /* La partie Hero de la page Bonus */
 
-
-#hero{
+#hero {
     background-image: url("../img/img35.png");
     height: 550px;
     background-repeat: no-repeat;
@@ -16,23 +15,42 @@
     background-size: cover;
 }
 
-#hero .box{
+#hero .box {
     top: 55%;
 }
+
+.button1 {
+    background-color: var(--white-ad-color);
+    color: var(--primary-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+#timer {
+    float: right;
+    font-weight: bold;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-left: 49%;
+    margin-right: 130px;
+    cursor: pointer;
+}
+
 
 /* Mobile version footer2 page Bonus */
 
 @media screen and (max-width:600px) {
-    .conteneur{
+    .conteneur {
         width: 100%;
         margin: 0 auto;
     }
-    .brand-mobile{
+    .brand-mobile {
         background-color: var(--primary-ad-color);
         padding: 20px 40px;
     }
-
-    .box{
+    .box {
         padding-left: 40px;
     }
 }
