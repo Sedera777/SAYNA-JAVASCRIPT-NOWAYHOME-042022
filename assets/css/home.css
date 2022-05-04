@@ -116,6 +116,11 @@ footer .brand img:nth-child(2) {
     margin-left: 49%;
 }
 
+.transition {
+    transform: scale(1.04);
+    transition: all .5s ease-in-out;
+}
+
 
 /* Design Footer  */
 

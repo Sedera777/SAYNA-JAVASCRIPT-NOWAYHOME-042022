@@ -142,6 +142,11 @@ $(document).ready(function() {
         },
     });
     // ****************************************************************************************************
+    $('.card-img-top').hover(function() {
+        $(this).addClass('transition');
+    }, function() {
+        $(this).removeClass('transition');
+    });
     // card-text content hiding
     $('.card-text').hide()
     $('.card-text').nextUntil('.button1').hide()
@@ -150,7 +155,7 @@ $(document).ready(function() {
             $('.card-text1').fadeTo(1500, 1)
         },
         mouseleave: function() {
-            $('.card-text1').hide(2000)
+            $('.card-text1').fadeOut(1000)
         }
     })
     $('.card2').on({
@@ -158,7 +163,7 @@ $(document).ready(function() {
             $('.card-text2').fadeTo(1500, 1)
         },
         mouseleave: function() {
-            $('.card-text2').hide(2000)
+            $('.card-text2').fadeOut(1000)
         }
     })
     $('.card3').on({
@@ -167,8 +172,8 @@ $(document).ready(function() {
                 $('.card-text3').nextUntil('.button1').fadeTo(1500, 1)
             },
             mouseleave: function() {
-                $('.card-text3').hide(2000)
-                $('.card-text3').nextUntil('.button1').hide(2000)
+                $('.card-text3').fadeOut(1000)
+                $('.card-text3').nextUntil('.button1').fadeOut(1000)
             }
         })
         // ****************************************************************************************************
@@ -201,7 +206,7 @@ $(document).ready(function() {
 
             } else {
                 popUpBox.style.display = 'block';
-                save.innerText = 'Votre formulaire a été bien enregistré';
+                save.innerHTML = 'Votre formulaire a été bien enregistré<br><br><br>😍 🥰 😘';
                 closeBtn.style.marginTop = '25px';
                 danger.innerHTML = '';
             }

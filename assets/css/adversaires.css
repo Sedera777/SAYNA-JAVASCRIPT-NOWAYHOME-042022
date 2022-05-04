@@ -108,13 +108,6 @@ footer .brand img:nth-child(2) {
     top: 25%;
 }
 
-#timer {
-    font-weight: bold;
-    padding: 20px;
-    border: 1px solid #fff;
-    border-radius: 20px;
-}
-
 
 /* La section des cartes Design */
 
@@ -130,14 +123,7 @@ footer .brand img:nth-child(2) {
 }
 
 #card-section .card-hero {
-    border: 6px solid var(--black-ad-color);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 300px;
-    height: 600px;
     margin: 20px;
-    overflow: hidden;
-    box-shadow: 0px 4px 6px var(--black-ad-color);
 }
 
 #card-section .card-hero .card-image {
@@ -146,15 +132,32 @@ footer .brand img:nth-child(2) {
     margin-bottom: 15px;
     background-size: cover;
     background-position: center;
+    position: relative;
+    border-left: 6px solid var(--black-ad-color);
+    border-right: 6px solid var(--black-ad-color);
+    border-top: 6px solid var(--black-ad-color);
 }
 
-#card-section .card-hero:hover {
+.triangle {
+    width: 0;
+    height: 0;
+    border: 17px solid;
+    position: absolute;
+    right: 0;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: #ffffff;
+    border-right-color: #ffffff;
+}
+
+
+/* #card-section .card-hero:hover {
     transform: scale(1.05);
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     color: var(--white-ad-color);
     background-color: var(--black-ad-color);
-}
+} */
 
 
 /* Ajout des images par carte */
@@ -171,17 +174,37 @@ footer .brand img:nth-child(2) {
     background-image: url(../img/img10.png);
 }
 
+.transition {
+    transform: scale(0.99);
+    transition: all .5s ease-in-out;
+}
+
 
 /* Design carte contenu */
 
 #card-section .card-hero .card-title {
-    text-align: center;
     font-weight: bold;
+    padding: 15px;
+    margin-top: -20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-left: 6px solid var(--black-ad-color);
+    border-right: 6px solid var(--black-ad-color);
 }
 
 #card-section .card-hero .card-content {
-    padding: 15px;
     font-size: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 4px 6px var(--black-ad-color);
+    border-left: 6px solid var(--black-ad-color);
+    border-right: 6px solid var(--black-ad-color);
+    border-bottom: 6px solid var(--black-ad-color);
 }
 
 #card-section .card-hero .card-content p {
@@ -240,14 +263,35 @@ footer {
 
 footer .media {
     padding: 15px;
-    margin-bottom: 10px;
+    word-spacing: .7rem;
 }
 
-footer .media img {
-    background-color: var(--primary-ad-color);
-    color: var(--white-ad-color);
-    padding: 5px;
+.fa-facebook-f {
+    padding: 7px 15px;
     border-radius: 50%;
+    color: var(--black-ad-color);
+    background-color: var(--primary-ad-color);
+}
+
+.fa-instagram {
+    padding: 7px 10px;
+    border-radius: 50%;
+    color: var(--black-ad-color);
+    background-color: var(--primary-ad-color);
+}
+
+.fa-youtube {
+    padding: 8px 5px;
+    border-radius: 50%;
+    color: var(--black-ad-color);
+    background-color: var(--primary-ad-color);
+}
+
+.fa-twitter {
+    padding: 8px 7px;
+    border-radius: 50%;
+    color: var(--black-ad-color);
+    background-color: var(--primary-ad-color);
 }
 
 footer .copyright {
