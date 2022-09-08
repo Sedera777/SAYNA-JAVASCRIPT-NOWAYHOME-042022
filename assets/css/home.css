@@ -12,6 +12,7 @@
 
 body {
     font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
     font-weight: 200;
 }
 
@@ -46,8 +47,8 @@ ul {
 
 #header-top nav .navigbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 #header-top nav .brand img,
@@ -62,8 +63,9 @@ footer .brand img:nth-child(2) {
 
 #header-top nav .menu ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 #header-top nav .menu ul li {
@@ -72,8 +74,9 @@ footer .brand img:nth-child(2) {
 }
 
 #header-top nav .menu ul li a {
-    text-decoration: none;
     font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
     color: var(--white-ad-color);
 }
 
@@ -81,7 +84,7 @@ footer .brand img:nth-child(2) {
 /* La partie Hero Design */
 
 #hero {
-    background: url(../img/home1.png), linear-gradient(#0d0101, #580909, #a61111);
+    background: linear-gradient(#0d0101, #580909, #a61111);
     height: 800px;
     background-repeat: no-repeat;
     background-position: 95%;
@@ -106,6 +109,14 @@ footer .brand img:nth-child(2) {
 #hero .box {
     margin-left: 10%;
     margin-top: 10%;
+}
+
+#hero .marvel {
+    position: absolute;
+    opacity: 0;
+    width: 40%;
+    left: -70%;
+    top: 22%;
 }
 
 .transition {
@@ -211,6 +222,9 @@ footer .copyright {
         font-weight: bold;
         font-size: 1em;
     }
+    .spider {
+        right: 0%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -235,6 +249,9 @@ footer .copyright {
     #hero .description {
         font-weight: bold;
         font-size: 0.7em;
+    }
+    #hero .marvel {
+        top: 7%;
     }
     /* Footer mobile*/
     .navigation-footer {

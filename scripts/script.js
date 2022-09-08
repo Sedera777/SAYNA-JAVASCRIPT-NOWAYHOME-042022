@@ -42,8 +42,6 @@ $(document).ready(function() {
 
     playButton.addEventListener('click', () => {
         const nowPlaying = playButton.innerHTML == '<i class="fa-solid fa-play"></i>';
-
-
         if (nowPlaying) {
             pauseSong()
         } else {
@@ -122,6 +120,38 @@ $(document).ready(function() {
         },
     });
     // ****************************************************************************************************
+    // Logo MARVEL qui apparaît en foundu à partir de la gauche
+
+    $('.marvel').animate({ left: '45%', opacity: '1' }, 3000);
+
+    // ****************************************************************************************************
+
+    // scroll qui suit la page
+    (function() {
+        let scrollY = function() {
+            let supportPageOffset = window.pageXOffset !== undefined;
+            let isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+            return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+        }
+        let spider = document.querySelector('.spider');
+        let rect = spider.getBoundingClientRect()
+        let top = rect.top + scrollY();
+        let hasScrollClass = spider.classList.contains('fixed');
+        let constraint = document.querySelector(spider.getAttribute('data-constraint'));
+        console.log(constraint)
+        window.addEventListener('scroll', function() {
+
+
+            if (scrollY() > top && !hasScrollClass) {
+                spider.classList.add('fixed')
+            } else if (scrollY() < top && hasScrollClass) {
+                spider.classList.remove('fixed')
+            }
+        })
+
+    })()
+
+    // ****************************************************************************************************
     $('.card-img-top').hover(function() {
         $(this).addClass('transition');
     }, function() {
@@ -173,29 +203,29 @@ $(document).ready(function() {
     var danger = document.getElementById('danger');
     const send = document.getElementById('send');
     var inputs = document.getElementsByClassName('become-spiderman');
+    $('#popUpBox').hide();
 
     send.addEventListener('submit', function(e) {
         e.preventDefault()
-
-        for (var i = 0; i < inputs.length; i++) {
+        for (let i = 0; i < inputs.length; i++) {
             if (inputs[i].value == '') {
-                popUpBox.style.display = 'block';
-                save.innerText = 'Veuillez renseigner tous les champs !!';
-                danger.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>'
+                $('#popUpBox').fadeIn(1000);
+                save.innerText = 'Veuillez renseigner tous les champs s\'il vous plaît!!';
+                danger.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
                 return false
 
             } else {
-                popUpBox.style.display = 'block';
+                $('#popUpBox').fadeIn(1000);
                 save.innerHTML = 'Votre formulaire a été bien enregistré<br><br><br>😍 🥰 😘';
                 closeBtn.style.marginTop = '25px';
                 danger.innerHTML = '';
             }
         }
-
     })
+
     closeBtn.addEventListener('click', () => {
-        popUpBox.style.display = 'none';
-        for (var i = 0; i < inputs.length; i++) {
+        $('#popUpBox').fadeOut(1000);
+        for (let i = 0; i < inputs.length; i++) {
             inputs[i].value = ''
         }
     })

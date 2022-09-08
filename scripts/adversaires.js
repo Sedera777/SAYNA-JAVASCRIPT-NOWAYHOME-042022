@@ -15,17 +15,17 @@ $(document).ready(function() {
 
     $('.card-image-1').on({
         mouseenter: function() {
-            $('.card-content-1').fadeTo(5000, 1)
+            $('.card-content-1').fadeTo(3000, 1)
             $('.card-title').css('background-color', '#114b9298')
-            $('.class-title1').animate({ left: '50px' }, 4000)
-            $('.triangle').hide(4000)
+            $('.class-title1').animate({ left: '50px' }, 3000)
+            $('.triangle1').fadeOut(3000)
 
         },
         mouseleave: function() {
-            $('.card-content-1').hide(2000)
+            $('.card-content-1').fadeOut(1000)
             $('.card-title').css('background-color', 'rgba(0, 0, 0, 0.7)')
-            $('.class-title1').animate({ left: '0px' }, 4000)
-            $('.triangle').show(2000)
+            $('.class-title1').animate({ left: '0px' }, 3000)
+            $('.triangle1').show(3000)
 
         }
     })

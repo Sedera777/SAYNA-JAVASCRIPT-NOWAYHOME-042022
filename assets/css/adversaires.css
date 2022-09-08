@@ -62,8 +62,9 @@ footer .brand img:nth-child(2) {
 
 #header-top nav .menu ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 #header-top nav .menu ul li {
@@ -72,8 +73,9 @@ footer .brand img:nth-child(2) {
 }
 
 #header-top nav .menu ul li a {
-    text-decoration: none;
     font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
     color: var(--white-ad-color);
 }
 
@@ -96,6 +98,7 @@ footer .brand img:nth-child(2) {
     font-family: 'far_from_homecomingregular';
     font-size: 5em;
     font-weight: 100;
+    white-space: nowrap;
 }
 
 #hero .description {
@@ -139,7 +142,7 @@ footer .brand img:nth-child(2) {
     border-top: 6px solid var(--black-ad-color);
 }
 
-.triangle {
+.triangle1 {
     width: 0;
     height: 0;
     border: 17px solid;
